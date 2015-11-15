@@ -45,8 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithClass:(Class)cellClass
                       content:(nullable id)content
-                        block:(void(^)(id _Nullable content, NSIndexPath *indexPath))selectBlock
-                     userInfo:(NSDictionary *)userInfo NS_DESIGNATED_INITIALIZER;
+                        block:(nullable void(^)(id _Nullable content, NSIndexPath *indexPath))selectBlock
+                     userInfo:(nullable NSDictionary *)userInfo NS_DESIGNATED_INITIALIZER;
 
 + (instancetype)cellDescriptorWithClass:(Class)cellClass
                                 content:(nullable id)content;
